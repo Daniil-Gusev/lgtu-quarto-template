@@ -1,0 +1,31 @@
+project:
+  title: "template"
+lang: ru
+format:
+  pdf:
+    titlepage: false
+    toc: false 
+    documentclass: article
+    papersize: a4
+    mainfont: Times New Roman
+    fontsize: 14pt
+    linestretch: 1.5
+    geometry:
+       - left=25mm
+       - top=20mm
+       - right=20mm
+       - bottom=20mm
+    indent: true
+    number-sections: true
+    crossref:
+      tbl-title: "Таблица"
+      fig-title: "Рисунок"
+      eq-title: "Формула"
+      tbl-prefix: "табл."
+      fig-prefix: "рис."
+      eq-prefix: "формула"
+    pdf-engine: lualatex
+    include-in-header:
+      - titledata.tex
+      - gost/titlepage.tex
+      - gost/13-2016-2-gost.sty

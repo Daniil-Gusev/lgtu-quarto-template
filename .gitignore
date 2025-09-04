@@ -1,0 +1,15 @@
+*/.quarto
+
+# Local IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and other tmp files
+*.log
+tmp/
+temp/
+
+# macOS
+.*DS_Store
