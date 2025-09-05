@@ -1,16 +1,15 @@
 \InsertTitlePage
 
-\newpage
 \thispagestyle{empty}
 \tableofcontents
 
 # Задание кафедры {.unnumbered}
 \thispagestyle{empty}
+\setcounter{page}{3}
+
 Знать бы еще, какое именно...
 
 # Введение {.unnumbered}
-\setcounter{page}{3}
-
 Здесь начинается текст введения лабораторной работы. Текст должен быть набран шрифтом Times New Roman, 14 кеглем с полуторным межстрочным интервалом. Абзацный отступ составляет 1.25 см. Поля документа: левое — 25 мм, остальные — по 20 мм.
 
 # Основная часть

@@ -26,6 +26,6 @@ format:
       eq-prefix: "формула"
     pdf-engine: lualatex
     include-in-header:
+      - gost/13-2016-2-gost.sty
       - titledata.tex
       - gost/titlepage.tex
-      - gost/13-2016-2-gost.sty

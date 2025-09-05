@@ -1,33 +1,51 @@
+\usepackage{hyphenat}
+
 \newcommand{\InsertTitlePage}{%
 \begin{titlepage}
-\thispagestyle{empty} 
-\centering 
+\thispagestyle{empty}
 
-{\small
-МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РОССИЙСКОЙ ФЕДЕРАЦИИ\\[2ex]
-Федеральное государственное бюджетное образовательное учреждение высшего образования\\[1ex]
-«Липецкий государственный технический университет»
-}
+\noindent\begin{minipage}[t]{\linewidth}
+\vspace{0pt}
+\begin{minipage}[t]{0.15\linewidth}
+\vspace{0pt}
+\includegraphics[height=25mm, keepaspectratio]{gost/media/title.png}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.83\linewidth}
+\vspace{0pt}
+\centering
+\small 
+\bfseries
+\linespread{1}
+\selectfont
+\hspace{1.5cm}\nohyphens{\textbf{МИНИСТЕРСТВО НАУКИ И ВЫСШЕГО ОБРАЗОВАНИЯ РФ}}\\[2ex]
+\hspace{2.5cm}\nohyphens{\textbf{ФЕДЕРАЛЬНОЕ ГОСУДАРСТВЕННОЕ БЮДЖЕТНОЕ}} \\
+\nohyphens{\textbf{ОБРАЗОВАТЕЛЬНОЕ УЧРЕЖДЕНИЕ ВЫСШЕГО ОБРАЗОВАНИЯ}}\\
+\hspace{2.5cm}\textbf{«ЛИПЕЦКИЙ ГОСУДАРСТВЕННЫЙ ТЕХНИЧЕСКИЙ}\\
+\hspace{3cm}\textbf{УНИВЕРСИТЕТ»}
+\end{minipage}
+\end{minipage}
 
 \vspace{2cm}
 
+\begin{center}
+\large
 {\large \institute}
-
-\vspace{0.5cm}
 
 {\large Кафедра \department} 
 
 \vspace{2.5cm}
 
-{\Large \bfseries \worktype}
+{\large \worktype}
 
 \vspace{0.5cm} 
 
-по \discipline
+{\large по \discipline}
 
 \vspace{0.5cm}
 
-«\worktitle»
+{\large «\worktitle»}
+\end{center}
 
 \vfill
 
@@ -35,11 +53,10 @@
 \begin{tabular}{l}
 Выполнил: \\
 студент \studentcourse~курса \\
-направления «\studentprogram» \\
 гр. \studentgroup \\
 \studentname \\ 
 \\
-Проверил: \\
+Руководитель: \\
 \teachertitle \\
 \teachername
 \end{tabular}
@@ -47,7 +64,11 @@
 
 \vfill
 
+\begin{center}
+\large
 Липецк \workyear
+\end{center}
 
 \end{titlepage}
+\clearpage
 }
