@@ -1,3 +1,5 @@
+\usepackage{hyphenat}
+
 \newcommand{\InsertTitlePage}{%
 \begin{titlepage}
 \thispagestyle{empty}
@@ -47,16 +49,18 @@
 
 \vfill
 
-\normalsize
-\begin{tabular}{b{4.75cm} p{1cm} c p{1cm} c}
-Студент  	&   &  &  &  \studentname \\ \hhline{~~-~-} 
-
- 	&  & \footnotesize \hspace{0.5cm} подпись, дата	\hspace{0.5cm} &  & \footnotesize  фамилия, инициалы \\ [-0.25cm]
-Группа \underline{\studentgroup}  	&   &  &  &  \\ [0.4cm]
-Руководитель  	&   &  &  &  \\
-\centering{\teachertitle}	&   &  &  & \teachername \\ \hhline{-~-~-} 
-\footnotesize учёная степень, учёное звание	 	&  	& \footnotesize \hspace{0.5cm} подпись, дата	\hspace{0.5cm} &  & \footnotesize  фамилия, инициалы \\
-\end{tabular} 
+\begin{flushright}
+\begin{tabular}{l}
+Выполнил: \\
+студент \studentcourse~курса \\
+гр. \studentgroup \\
+\studentname \\ 
+\\
+Руководитель: \\
+\teachertitle \\
+\teachername
+\end{tabular}
+\end{flushright}
 
 \vfill
 
@@ -66,4 +70,5 @@
 \end{center}
 
 \end{titlepage}
+\clearpage
 }

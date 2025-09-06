@@ -1,10 +1,12 @@
-project:
-  title: "template"
 lang: ru
+bibliography: references.bib
+csl: gost/gost-r-7-0-5-2008-numeric.csl
 format:
   pdf:
     titlepage: false
-    toc: false 
+    toc: false
+    cite-method: citeproc
+    link-citations: true
     documentclass: article
     papersize: a4
     mainfont: Times New Roman
@@ -24,8 +26,9 @@ format:
       tbl-prefix: "табл."
       fig-prefix: "рис."
       eq-prefix: "формула"
-    pdf-engine: lualatex
+    pdf-engine: xelatex
     include-in-header:
       - gost/13-2016-2-gost.sty
       - titledata.tex
       - gost/titlepage.tex
+      - gost/toc.tex
