@@ -1,6 +1,6 @@
 lang: ru
 bibliography: references.bib
-csl: gost/gost-r-7-0-5-2008-numeric.csl
+csl: include/gost-r-7-0-5-2008-numeric.csl
 format:
   pdf:
     titlepage: false
@@ -28,7 +28,8 @@ format:
       eq-prefix: "формула"
     pdf-engine: xelatex
     include-in-header:
-      - gost/13-2016-2-gost.sty
+      - include/13-2016-2-gost.sty
       - titledata.tex
-      - gost/titlepage.tex
-      - gost/toc.tex
+      - include/titlepage.tex
+      - include/toc.tex
+      - include/code_blocks.tex
